@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập html buổi 2</title>
+    <link rel="stylesheet" href="/css/Btvn-buoi-2.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        .container{
+            justify-items: center;
+        }
+
+        .content-1 p{
+            margin:5px;
+            margin-right:180px;
+            padding:5px;
+        }
+        .fix-text{
+            color:red;
+        }
+        .background-content{
+            font-size:14px;
+            width: 34%;
+            height: 80px;
+            background-color:#0099cc;
+        }
+        .content-2{
+            margin-left:55px;
+        }
+        .content-2 p{
+            padding:2px;
+            margin:0;
+        }
+        .Next p{
+            padding:10px;
+            margin-left:-30px;
+        }
+        .container-2{
+            height: 700px;
+            border-top: 1px solid red;
+        }
+        .content-3{
+            justify-items: center;
+        }
+        .background-content-1{
+            justify-self: center;
+            background-color: #ffff33;
+            border-bottom: 3px solid #ffab2a;
+            width: 850px;
+            height:18px;
+            padding:0;
+            margin:0;
+        }
+        .background-content-1 p{
+            text-align:center;
+            padding:0;
+            margin:0;
+        }
+        .content-img img{
+            margin:20px 0;
+        }
+        .content-img p{
+            text-align: start;
+        }
+        .container-3{
+            border-top:1px solid red;
+        }
+        .img-content{
+            display: flex;
+            justify-self: center;
+        }
+        .img-content{
+            margin-top:20px;
+            padding:0;
+        }
+        .img-content p{
+            margin:0;
+            padding-left: 8px;
+        }
+        .background-content-2{
+            border-top:40px solid #efc869;
+            background-color:#efc869;
+            width: 650px;
+            justify-self: center;
+            height: 350px;
+            padding:0;
+            margin:0;
+        }
+        .content-link{
+            justify-self: center;
+            background-color: white;
+            border:2px solid #999999;
+            height: 340px;
+            width: 635px;
+        }
+        .content-title{
+            display: flex;
+            justify-content: space-evenly;
+            background-color:#f2f2f2;
+            border:1px solid #999999;
+            height: 65px;
+            padding-bottom:25px;
+            margin:0;
+        }
+        .content-title input{
+            width: 350px;
+            height: 30px;margin-top:10px;
+        }
+        .content-title img{
+            padding: 0;
+            margin-top: 16px;
+            opacity: 60%;
+        }
+        .content-title-1{
+            display: flex;
+            gap:10px;
+            padding: 0;
+            margin-top:-30px;
+            margin-left:30px;
+        }
+        .content-title-1 p{
+            margin: 0;
+        }
+        .logo-fpt{
+            margin-top:10px;
+            padding: 0 10px;
+        }
+        .text-link{
+            gap:20px;
+            color:blue;
+            padding: 0 15px;
+            margin:0;
+        }
+        .text-link a:hover{
+            color:blue;
+        }
+        .banner{
+            padding: 0;
+            margin-top:-9px;
+        }
+        .text-header{
+            text-align: center;
+        }
+        .container-5{
+            justify-self: center;
+            width: 800px;
+        }
+        .text-header h1{
+            padding: 5px;
+            margin: 20px;
+            border-top:1px solid red;
+        }
+        .title-text ul blockquote{
+            padding:0;
+            margin:5px 50px;
+        }
+        .text-content-4{
+            border-top:1px solid red;
+        }
+        .container-6{
+            display:flex;
+            justify-self: center;
+        }
+        .img-content-1{
+            display:flex;
+            align-items: center;
+        }
+        .text-content-5 h2{
+            color:#F00;
+            position: relative;
+            left:200px ;
+            width:100%;
+        }
+        .content-title-3{
+            width: 750px;
+            height: 350px;
+            display:flex;
+            align-content: space-between;
+        }
+        .text-content-5 blockquote{
+            padding:0;
+            margin:0 35px 0;
+        }
+        .text-content-5 ul{
+            justify-items: start;
+        }
+        .text-content-5 p{
+            margin:0;
+            margin-left: 16px;
+        }
+        .color-option{
+            background-color:#f98cce;
+        }
+        .container-7{
+            display:flex;
+            justify-content: center;
+            margin-top: 70px;
+        }
+        .content-6{
+            padding:1.5px;
+            width:400px;
+            height: 140px;
+            border: 1px solid black ;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1fr 3fr 1.5fr 1fr 1fr;
+        }
+        .grid-container button{
+            background-color: white;
+            height: 35px;
+            border: 1px solid black;
+        }
+        .container-8{
+            display:flex;
+            justify-content: center;
+        }
+        .content-7{
+            text-align: center;
+            border:1px solid black;
+            margin:90px;
+            width: 400px;
+            height:140px;
+            padding:1.5px;
+        }
+        .grid-container-1{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            height:108px;
+        }
+        .grid-container-1 button{
+            text-align: start;
+        }
+        .button-fix{
+            height: 32px;
+            width: 100%;
+        }
+        .content-7 button{
+            border:1px solid black;
+            background-color: white;
+        }
+        .button-fix-1{
+            text-align: start;
+        }
+        table, th,td{
+            border:1px solid black;
+        }
+        .grid-container-2{
+            display: flex;
+            justify-content: center;
+        }
+        table,th,td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<main id="main">
+    <div class="container">
+        <div class="content">
+            <h1>Bài 1.3: Công thức toán học</h1>
+        </div>
+        <div class="content-1">
+            <p><b><u>Hóa học</u></b>: Nước <span class="fix-text">H<sub>2</sub>O</span>; Axit sunfuric: <span class="fix-text">H<sub>2</sub>SO<sub>4</sub></span></p>
+            <p><b><u>Toán học:</u></b> Phương trình bậc 2:ax<sup>2</sup> + bx +c = 0</p>
+        </div>
+        <div class="background-content">
+            <div class="content-2">
+                <p>For i = 0 to 10</p>
+                <p>Tong = Tong + 1</p>
+                    <div class="Next">
+                        <p>Next</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-2">
+        <div>
+            <div class="content-3">
+                <h2>Bài 1: Công nghệ thông tin là gì?</h2>
+            </div>
+            <div class="background-content-1">
+                <p>Công nghệ thông tin là gì?</p>
+                <div class="content-img">
+                    <img src="/image/anh-bai-tap.jpg" alt="img" width="400" height="250">
+                    <p>CNTT hiểu theo nghĩa rộng và tổng quát nhất là việc sử dụng công nghệ hiện đại vào việc tạo ra,
+                        lưu trữ, truyền dẫn thông tin, xử lý, khai thác thông tin. Hiện tại ngành CNTT phân thành 5 chuyên
+                        ngành chính:<br><br>Khoa học máy tính, kỹ thuật máy tính, hệ thống thông tin, mạng máy tính truyền
+                        thông. Thiết kế, chế tạo các sản phẩm của CNTT, đặc biệt là các sản phẩm phần mềm. Bên cạnh đó,
+                        nhóm ngành CNTT cũng triển khai ứng dụng CNTT trong sản xuất đời sống, chuyển giao công nghệ trong
+                        lĩnh vực CNTT, tư vấn kỹ thuật cho việc thực hiện một số dự án nhà nước về ứng dụng CNTT trong quản
+                        lý, phát triển<br><br>kinh tế và sản xuất.nhóm ngành CNTT cũng triển khai ứng dụng CNTT trong sản xuất đời sống, chuyển giao công nghệ trong
+                        lĩnh vực CNTT, tư vấn kỹ thuật cho việc thực hiện một số dự án nhà nước về ứng dụng CNTT trong quản
+                        lý, phát triển nhóm ngành CNTT cũng triển khai<br><br>ứng dụng CNTT trong sản xuất đời sống, chuyển giao công nghệ trong
+                        lĩnh vực CNTT, tư vấn kỹ thuật cho việc thực hiện một số dự án nhà nước về ứng dụng CNTT trong quản
+                        lý, phát triển nhóm ngành CNTT cũng triển khai ứng dụng CNTT trong sản xuất đời sống, chuyển giao công nghệ trong
+                        lĩnh vực CNTT, tư vấn kỹ thuật cho việc thực hiện một số dự án nhà nước về ứng dụng CNTT trong quản
+                        lý, phát triển</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-3">
+        <div class="content-4">
+            <div class="img-content">
+                <img src="/image/anh-bai-tap.jpg" alt="img" width="400" height="250">
+
+                <p>CNTT hiểu theo nghĩa rộng và tổng quát nhất là việc sử dụng công nghệ<br>hiện đại vào việc tạo ra,
+                    lưu trữ, truyền dẫn thông tin, xử lý, khai thác thông<br>tin. Hiện tại ngành CNTT phân thành 5 chuyên
+                    ngành chính: Khoa học máy<br>tính, kỹ thuật máy tính, hệ thống thông tin,<br><br>mạng máy tính truyền
+                    thông. Thiết kế, chế tạo các sản phẩm của CNTT, đặc<br>biệt là các sản phẩm phần mềm. Bên cạnh đó,
+                    nhóm ngành CNTT cũng triển<br>khai ứng dụng CNTT trong sản xuất đời sống, chuyển giao công nghệ trong<br>
+                    lĩnh vực CNTT, tư vấn kỹ thuật cho việc thực hiện một số dự án nhà nước<br>về ứng dụng CNTT trong quản
+                    lý, phát triển kinh tế và sản xuất.nhóm ngành<br>CNTT cũng triển khai ứng dụng CNTT trong sản xuất đời sống, chuyển giao<br><br>công nghệ trong
+                    lĩnh vực CNTT, tư vấn kỹ thuật cho việc thực hiện một số dự<br>án nhà nước về ứng dụng CNTT trong quản
+                    lý, phát triển nhóm ngành CNTT<br>cũng triển khai ứng dụng CNTT trong sản xuất đời sống, chuyển giao công<br>nghệ trong
+                    lĩnh vực CNTT, tư vấn kỹ thuật cho việc thực hiện một số dự án<br><br>nhà nước về ứng dụng CNTT trong quản
+                    lý, phát triển nhóm ngành CNTT<br>cũng triển khai ứng dụng CNTT trong sản xuất đời sống, chuyển giao công<br>nghệ trong
+                    lĩnh vực CNTT, tư vấn kỹ thuật cho việc thực hiện một số dự án<br>nhà nước về ứng dụng CNTT trong quản
+                    lý, phát triển.</p>
+            </div>
+        </div>
+    </div><br><br><br><br>
+    <div style="border-top:1px solid red;" class="container-4">
+        <div class="background-content-2">
+            <div class="content-link">
+                <div class="content-title">
+                    <img src="/image/home.png" alt="" width="25" height="25">
+                    <img src="/image/Thinh%20Nguyen%20Tien.png" alt="" width="25" height="25">
+                    <img src="/image/search.png" alt="" width="25" height="25">
+                    <input style="font-size: 16px;" type="text" placeholder=" ❗ localhost:54140/Slide/Demo5/Home.html">
+                    <img src="/image/burger-bar.png" alt="" width="25" height="25">
+                </div>
+                <div class="content-title-1">
+                    <img src="/image/crom.png" alt="" width="25" height="25">
+                    <p>Apps</p>
+                    <p style="opacity: 60%;">For quick access, place your bookmarks here on the bookmarks bar.</p>
+                </div>
+                <div class="logo-fpt">
+                    <img src="/image/fpt.jpeg" alt="" width="320" height="100">
+                    <hr width="97%">
+                </div>
+                <div class="text-link">
+                    <a href="home.html">Hello</a> <a href="ThoTim.html">Bài thơ</a> <a href="PhuongTrinh.html">Phương Trình</a>
+                    <hr width="99%">
+                </div>
+                <div class="banner">
+                    <img src="/image/baner.1.jpg" alt="" width="100%" height="105">
+                </div>
+            </div>
+        </div>
+        <div class="container-5">
+            <div class="text-header">
+                <h1>Phần 2: Tạo dựng sanh sách</h1>
+            </div>
+            <div class="content-title-2">
+                <div class="text-content-3">
+                    <h2>Bài 3.1: Danh sách không thứ tự</h2>
+                </div>
+                <nav class="title-text">
+                    <ul>⬤ Chương 1: Tổng quan về Internet và dịch vụ WEB
+                        <blockquote>❍ Internet</blockquote>
+                        <blockquote>❍ Môi trường tạo Website</blockquote>
+                        <blockquote>❍ Internet protocol</blockquote>
+                        <blockquote>❍ Web page, Website</blockquote>
+                        <blockquote>❍ Trang Web động, Web tĩnh</blockquote>
+                        <blockquote>❍ Các công cụ tạo Web cơ bản(FrontPage,ISS,PHP)</blockquote>
+                    </ul>
+                    <ul>⬤ Chương 2: Tạo Website
+                        <blockquote>✦ Quy trình lập Website</blockquote>
+                        <blockquote>✦ Các mô hình tổ chức Website</blockquote>
+                        <blockquote>✦ Tạo Website mẫu(Web template)</blockquote>
+                        <blockquote>✦ Tạo trang Web mẫu(Web Page Template)</blockquote>
+                    </ul>
+                    <ul>⬤ Chương 3: Tổng quan về HTML5
+                        <blockquote>✦ Định nghĩa HTML5</blockquote>
+                        <blockquote>✦ Tổng quan về cú pháp HTML5</blockquote>
+                    </ul>
+                    <ul>⬤ Chương 4: Làm việc với HTML5
+                        <blockquote>✦ Các phần tư HTML cơ bản</blockquote>
+                        <blockquote>✦ Định văn bản</blockquote>
+                        <blockquote>✦ Các thẻ đa phương tiện</blockquote>
+                        <blockquote>✦ Trích dẫn</blockquote>
+                        <blockquote>✦ Dánh sách(List)</blockquote>
+                        <blockquote>✦ Bảng(Table)</blockquote>
+                        <blockquote>✦ Các phần tư nội dung mới trong HTML</blockquote>
+                        <blockquote>✦ Làm việc với mẫu Form</blockquote>
+                        <blockquote>✦ Làm việc với HTML5 Audio-video</blockquote>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content-title-2">
+                <div class="text-content-4">
+                    <h2>Bài 3.2: Danh sách có thứ tự</h2>
+                </div>
+                <nav class="title-text">
+                    <ul>I Chương 1: Tổng quan về Internet và dịch vụ WEB
+                        <blockquote>a. Internet</blockquote>
+                        <blockquote>b. Môi trường tạo Website</blockquote>
+                        <blockquote>c. Internet protocol</blockquote>
+                        <blockquote>d. Web page, Website</blockquote>
+                        <blockquote>e. Trang Web động, Web tĩnh</blockquote>
+                        <blockquote>f. Các công cụ tạo Web cơ bản(FrontPage,ISS,PHP)</blockquote>
+                    </ul>
+                    <ul>II Chương 2: Tạo Website
+                        <blockquote>1 Quy trình lập Website</blockquote>
+                        <blockquote>2 Các mô hình tổ chức Website</blockquote>
+                        <blockquote>3 Tạo Website mẫu(Web template)</blockquote>
+                        <blockquote>4 Tạo trang Web mẫu(Web Page Template)</blockquote>
+                    </ul>
+                    <ul>III Chương 3: Tổng quan về HTML5
+                        <blockquote>i. Định nghĩa HTML5</blockquote>
+                        <blockquote>ii. Tổng quan về cú pháp HTML5</blockquote>
+                    </ul>
+                    <ul>IV Chương 4: Làm việc với HTML5
+                        <blockquote>i. Các phần tư HTML cơ bản</blockquote>
+                        <blockquote>ii. Định văn bản</blockquote>
+                        <blockquote>iii. Các thẻ đa phương tiện</blockquote>
+                        <blockquote>iv. Trích dẫn</blockquote>
+                        <blockquote>v. Dánh sách(List)</blockquote>
+                        <blockquote>vi. Bảng(Table)</blockquote>
+                        <blockquote>vii. Các phần tư nội dung mới trong HTML</blockquote>
+                        <blockquote>viii. Làm việc với mẫu Form</blockquote>
+                        <blockquote>ix. Làm việc với HTML5 Audio-video</blockquote>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content-title-2">
+                <div class="text-content-4">
+                    <h2>Bài 3.3: Cấp danh sách</h2>
+                </div>
+                <nav class="title-text">
+                    <ul>I Chương 1: Tổng quan về Internet và dịch vụ WEB
+                        <blockquote>1 Internet</blockquote>
+                        <blockquote>2 Môi trường tạo Website</blockquote>
+                        <blockquote>3 Internet protocol</blockquote>
+                        <blockquote>4 Web page, Website</blockquote>
+                    </ul>
+                    <ul>II Chương 2: Tạo Website
+                        <blockquote>1 Quy trình lập Website</blockquote>
+                        <blockquote>2 Các mô hình tổ chức Website</blockquote>
+                        <blockquote>3 Tạo Website mẫu(Web template)</blockquote>
+                    </ul>
+                    <ul>III Chương 3: Tổng quan về HTML5
+                        <blockquote>1 Định nghĩa HTML5</blockquote>
+                        <blockquote>2 Tổng quan về cú pháp HTML5</blockquote>
+                            <ul>
+                                <blockquote>❍ Phần tử và thẻ HTML</blockquote>
+                                <blockquote>❍ Cấu trúc tổng quát tài liệu HTML</blockquote>
+                            </ul>
+                    </ul>
+                    <ul>IV Chương 4: Làm việc với HTML5
+                        <blockquote>1 Các phần tư HTML cơ bản</blockquote>
+                        <ul>
+                            <blockquote>✦ Tiêu đề (Heading)</blockquote>
+                            <blockquote>✦ Đoạn (Paragraph)</blockquote>
+                        </ul>
+                        <blockquote>2 Định văn bản</blockquote>
+                        <ul>
+                            <blockquote>✦ Định dạng cơ bản (bold, italic, small. big)</blockquote>
+                            <blockquote>✦ Nhấn mạnh (emphasis, strong)</blockquote>
+                            <blockquote>✦ Vị trí (subscript, superscript)</blockquote>
+                        </ul>
+                        <blockquote>3 Các thẻ đa phương tiện</blockquote>
+                        <blockquote>4 Trích dẫn</blockquote>
+                        <blockquote>5 Dánh sách(List)</blockquote>
+                        <blockquote>6 Bảng(Table)</blockquote>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container-6">
+        <div style="border:1px solid black;" class="content-title-3">
+            <div class="img-content-1">
+                <img src="/image/hoa.jpg" alt="hoa" width="150" height="220">
+            </div>
+            <div class="text-content-5">
+                <h2>Công ty Hoa héo Nhân Ái</h2>
+                <ul>1. <span style="background-color:#F00;color:white;">Giới thiệu</span>
+                        <blockquote>✦ Thành lập 25/0/2027</blockquote>
+                        <blockquote>✦ Chuyên cung cấp các loại heo héo</blockquote>
+                        <blockquote>✦ Có trên 1 cửa hàng bán chẵn tại TP.HCM</blockquote>
+                        <blockquote>✦ Không nhận kết giỏ hoa theo yêu cầu của khách</blockquote>
+                        <br>
+                        <hr width="92%">
+                    </ul>
+                <ul>2. <span style="background-color:#F00;color:white;">Liên hệ</span>
+                    <blockquote>❍ Điện thoại: +84 862 895 156</blockquote>
+                    <blockquote>❍ Địa chỉ: 24 Ngõ 192 Khương Thượng, Thanh Xuân, HN</blockquote>
+                    <p class="color-option"><b>© Copyright: <span style="color:#0146fc">Trung tâm cung cấp Hoa héo Nhân Ái - HN</span></b></p>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-7">
+        <div class="content-6">
+            <div class="grid-container">
+                <button><b>STT</b></button>
+                <button><b>Họ và tên</b></button>
+                <button><b>Toán</b></button>
+                <button><b>Lý</b></button>
+                <button><b>Hóa</b></button>
+                <button class="button-fix-1">1</button>
+                <button class="button-fix-1">Nguyễn Văn Nam</button>
+                <button class="button-fix-1">7</button>
+                <button class="button-fix-1">8</button>
+                <button class="button-fix-1">8</button>
+                <button class="button-fix-1">2</button>
+                <button class="button-fix-1">Nguyễn Thị Hoài</button>
+                <button class="button-fix-1">6</button>
+                <button class="button-fix-1">9</button>
+                <button class="button-fix-1">8</button>
+                <button class="button-fix-1">3</button>
+                <button class="button-fix-1">Phạm Văn Cường</button>
+                <button class="button-fix-1">7</button>
+                <button class="button-fix-1">7</button>
+                <button class="button-fix-1">6</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-8">
+        <div class="content-7">
+            <button class="button-fix">Bảng giá tiền học phí các môn</button>
+            <div class="grid-container-1">
+                <button>Cơ sở dữ liệu</button>
+                <button>900.000</button>
+                <button>Cấu trúc dữ liệu và giải thuật</button>
+                <button>450.000</button>
+                <button>Lập trình hướng đối tượng</button>
+                <button>600.000</button>
+                <button>Phân tích thiết kế hệ thống</button>
+                <button>600.000</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-9">
+        <div class="content-8">
+            <div class="grid-container-2">
+                <table style="width:400px;height:140px;" >
+                    <tbody>
+                        <tr>
+                            <td rowspan="4">Sĩ số lớp</td>
+                            <td>Ứng dụng phần mềm</td>
+                            <td>35/38</td>
+                        </tr>
+                        <tr>
+                            <td>Lập trình máy tính</td>
+                            <td>32/39</td>
+                        </tr>
+                        <tr>
+                            <td>Thiết kế đồ họa</td>
+                            <td>30/33</td>
+                        </tr>
+                        <tr>
+                            <td>Quản trị mạng</td>
+                            <td>37/37</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
